@@ -140,12 +140,29 @@ public class Mynecraft {
                         System.out.println("***Se agrego un bloque de obsidiana***");
                         break;
                     }
+                    
                 }
-            }
-            case 9: {
-
                 break;
             }
+            case 9: {
+                  for (int i = 0; i < bloques.size(); i++) {
+                  String bloque = bloques.get(i);
+                  System.out.println(i+". "+bloque);
+                }
+                 System.out.print("Que bloques deseas picar: ");
+                 int  blopicar= input.nextInt();
+                for (int i = 0; i < picos.size(); i++) {
+                    //String mat = picos.get(i).getMaterial().equals("hie");
+                     System.out.println(i+". "+picos.get(i).toString());
+                }
+                System.out.print("Que pico deseas usar: ");
+                int  picousar = input.nextInt();
+                bloques.remove(blopicar);
+                System.out.println("El bloque ha sido picado");    
+                
+                break;
+            }
+            
             case 10: {
                 for (int i = 0; i < bloques.size(); i++) {
                   String bloque = bloques.get(i);
