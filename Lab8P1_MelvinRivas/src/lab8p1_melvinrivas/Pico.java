@@ -46,5 +46,10 @@ class Pico {
     public void setTiempoEnRomper(float tiempoEnRomper) {
         this.tiempoEnRomper = tiempoEnRomper;
     }
+
+    @Override
+    public String toString() {
+        return "Pico de: " + material + ", vida: " + vida ;
+    }
     
 }
